@@ -1,5 +1,5 @@
-import { Card, Col, Container, Row } from "react-bootstrap";
-// import homeImage from "../assets/images/main-image.jpeg"
+import { Col, Container, Row } from "react-bootstrap";
+import homeImage from "../assets/images/main-image.png"
 
 
 
@@ -13,7 +13,7 @@ export default function MainPart() {
                         <h1>FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
                         <p className="pt-2 pb-3">Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
                         <button className="main_shop_Now">Shop Now</button>
-                        <div className="d-flex gap-5 pt-5 main_rating">
+                        <div className="d-flex gap-5 pt-5 main_rating flex-wrap">
                             <div>
                                 <h3>200+</h3>
                                 <p>International Brands</p>
@@ -31,7 +31,7 @@ export default function MainPart() {
                         </div>
                     </Col>
                     <Col lg={6} sm={12} className="main_image">
-                        <Card className="content-image"></Card>
+                        <img src={homeImage} alt="home image" className="h-100" />
                     </Col>
                 </Row>
             </Container>
