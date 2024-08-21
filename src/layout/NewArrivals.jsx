@@ -46,7 +46,7 @@ export default function NewArrivals() {
                         products.length > 0
                             ?
                             products.filter((_, i) => i <= 3).map(product =>
-                                <Col className="p-3" key={product.id} lg={3} md={3} sm={12}>
+                                <Col className="p-3" key={product.id} lg={3} md={6} sm={12}>
                                     <Card className="h-100">
                                         <Card.Img className="w-50 h-50 align-self-center pt-5" variant="bottom" src={product.image} />
                                         <Card.Body className="card_body h-50">
@@ -91,7 +91,7 @@ export default function NewArrivals() {
                 <Row className="g-4 pb-5">
                     {
                         products.filter((_, i) => i > 3 && i <= 7).map(product =>
-                            <Col className="p-3" key={product.id} lg={3} md={3} sm={12}>
+                            <Col className="p-3" key={product.id} lg={3} md={6} sm={12}>
                                 <Card className="h-100">
                                     <Card.Img className="w-50 h-50 align-self-center pt-5" variant="bottom" src={product.image} />
                                     <Card.Body className="card_body h-50">
